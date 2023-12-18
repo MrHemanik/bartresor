@@ -14,13 +14,6 @@ const config: GatsbyConfig = {
 module.exports = {
   pathPrefix: "/bartresor",
   plugins: [
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: `data`,
-        path: `${__dirname}/src/data/`,
-      },
-    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
   ],

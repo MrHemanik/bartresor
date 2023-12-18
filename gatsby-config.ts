@@ -11,5 +11,18 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: ["gatsby-plugin-postcss"]
 };
-
+module.exports = {
+  pathPrefix: "/microcontroller-programming-bartresor",
+  plugins: [
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
+      },
+    },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+  ],
+}
 export default config;

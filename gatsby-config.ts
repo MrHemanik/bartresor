@@ -12,7 +12,7 @@ const config: GatsbyConfig = {
   plugins: ["gatsby-plugin-postcss"]
 };
 module.exports = {
-  pathPrefix: "/microcontroller-programming-bartresor",
+  pathPrefix: "/bartresor",
   plugins: [
     {
       resolve: "gatsby-source-filesystem",
